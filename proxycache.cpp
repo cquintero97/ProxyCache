@@ -1,12 +1,12 @@
 // Christian Quintero
 // COEN 162 - Web Infrastructure
-// FILE: webcache.c
+// FILE: proxycache.c
 //
-// This program creates a web cache by initializing a TCP connection on a 
-// specified port and listens for a GET request from a browser on the same
+// This program creates a proxy cache by initializing a TCP connection on a 
+// specified port and listens for a GET request from a browser client on the same
 // port. If the page requested is in the cache, the program sends an if-modified-since
 // GET request to the server and receives the updated page if page has been modified, 
-// otherwise returns page from cache.
+// otherwise returns page from cache to client.
 // If page is not in cache, the program retrieves it from the server and adds it to cache.
 
 
